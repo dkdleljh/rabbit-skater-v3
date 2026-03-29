@@ -1,0 +1,139 @@
+// Rabbit Skater v3 - App Module build.gradle
+// Android SDK 34 | NDK 25 | Cocos2d-x 3.17
+
+plugins {
+    id 'com.android.application'
+    id 'org.jetbrains.kotlin.android'
+}
+
+android {
+    namespace 'com.devbyzenith.rabbitskater'
+    compileSdk 34
+    
+    defaultConfig {
+        applicationId "com.devbyzenith.rabbitskater"
+        
+        // 버전 정보
+        versionCode 30
+        versionName "3.0.0"
+        
+        // SDK 버전
+        minSdk 23
+        targetSdk 34
+        
+        // NDK
+        ndkVersion "25.2.9519653"
+        
+        // ABI 필터 (64-bit 우선)
+        ndk {
+            abiFilters 'armeabi-v7a', 'arm64-v8a', 'x86', 'x86_64'
+        }
+        
+        // 다중 덱스 활성화
+        multiDexEnabled true
+        
+        // 테스트
+        testInstrumentationRunner "androidx.test.runner.AndroidJUnitRunner"
+    }
+    
+    // 빌드 타입
+    buildTypes {
+        release {
+            minifyEnabled true
+            shrinkResources true
+            proguardFiles getDefaultProguardFile('proguard-android-optimize.txt'), 'proguard-rules.pro'
+            
+            // 서명
+            signingConfig signingConfigs.debug  // 실제 배포 시 release 서명 사용
+        }
+        debug {
+            minifyEnabled false
+            debuggable true
+        }
+    }
+    
+    // 컴파일 옵션
+    compileOptions {
+        sourceCompatibility JavaVersion.VERSION_17
+        targetCompatibility JavaVersion.VERSION_17
+    }
+    
+    kotlinOptions {
+        jvmTarget = '17'
+    }
+    
+    // 소스 세트
+    sourceSets {
+        main {
+            jniLibs.srcDirs = ['libs']
+        }
+    }
+    
+    // 빌드 특성
+    buildFeatures {
+        viewBinding true
+        buildConfig true
+    }
+    
+    // 패킹 옵션
+    packaging {
+        resources {
+            excludes += '/META-INF/{AL2.0,LGPL2.1}'
+        }
+        
+        // 중복 파일 방지
+        pickFirsts += [
+            'lib/x86/libc++_shared.so',
+            'lib/x86_64/libc++_shared.so',
+            'lib/armeabi-v7a/libc++_shared.so',
+            'lib/arm64-v8a/libc++_shared.so'
+        ]
+    }
+    
+    // Splits (ABI별 APK)
+    splits {
+        abi {
+            enable true
+            reset()
+            include 'arm64-v8a', 'x86_64', 'armeabi-v7a', 'x86'
+            universalApk true
+        }
+    }
+}
+
+dependencies {
+    // ==================== AndroidX ====================
+    implementation 'androidx.core:core-ktx:1.12.0'
+    implementation 'androidx.appcompat:appcompat:1.6.1'
+    implementation 'androidx.activity:activity-ktx:1.8.2'
+    implementation 'androidx.fragment:fragment-ktx:1.6.2'
+    implementation 'androidx.constraintlayout:constraintlayout:2.1.4'
+    
+    // Lifecycle
+    implementation 'androidx.lifecycle:lifecycle-runtime-ktx:2.7.0'
+    implementation 'androidx.lifecycle:lifecycle-viewmodel-ktx:2.7.0'
+    implementation 'androidx.lifecycle:lifecycle-livedata-ktx:2.7.0'
+    
+    // MultiDex
+    implementation 'androidx.multidex:multidex:2.0.1'
+    
+    // ==================== Google Mobile Ads ====================
+    implementation 'com.google.android.gms:play-services-ads:22.7.0'
+    
+    // ==================== AppLovin MAX ====================
+    implementation 'com.applovin:applovin-sdk:12.4.0'
+    
+    // ==================== Firebase ====================
+    implementation platform('com.google.firebase:firebase-bom:32.7.2')
+    implementation 'com.google.firebase:firebase-analytics-ktx'
+    implementation 'com.google.firebase:firebase-crashlytics-ktx'
+    
+    // ==================== Google Play Services ====================
+    implementation 'com.google.android.gms:play-services-base:18.3.0'
+    implementation 'com.google.android.gms:play-services-games:21.1.0'
+    
+    // ==================== Testing ====================
+    testImplementation 'junit:junit:4.13.2'
+    androidTestImplementation 'androidx.test.ext:junit:1.1.5'
+    androidTestImplementation 'androidx.test.espresso:espresso-core:3.5.1'
+}

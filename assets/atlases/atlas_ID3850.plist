@@ -1,0 +1,296 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd"/>
+
+<plist version="1.0">
+    <dict>
+        <key>frames</key>
+        <dict>
+            <key>PTModelSprite_ID3849</key>
+            <dict>
+                <key>frame</key>
+                <string>{{1608, 1724}, {247, 142}}</string>
+                <key>offset</key>
+                <string>{0.0, -0.0}</string>
+                <key>rotated</key>
+                <string>false</string>
+                <key>sourceColorRect</key>
+                <string>{{0, 0}, {247, 142}}</string>
+                <key>sourceSize</key>
+                <string>{247, 142}</string>
+            </dict>
+            <key>PTModelSprite_ID4872</key>
+            <dict>
+                <key>frame</key>
+                <string>{{0, 858}, {600, 591}}</string>
+                <key>offset</key>
+                <string>{0.0, -0.0}</string>
+                <key>rotated</key>
+                <string>false</string>
+                <key>sourceColorRect</key>
+                <string>{{0, 0}, {600, 591}}</string>
+                <key>sourceSize</key>
+                <string>{600, 591}</string>
+            </dict>
+            <key>PTModelSprite_ID5105</key>
+            <dict>
+                <key>frame</key>
+                <string>{{1408, 0}, {600, 591}}</string>
+                <key>offset</key>
+                <string>{0.0, -0.0}</string>
+                <key>rotated</key>
+                <string>false</string>
+                <key>sourceColorRect</key>
+                <string>{{0, 0}, {600, 591}}</string>
+                <key>sourceSize</key>
+                <string>{600, 591}</string>
+            </dict>
+            <key>PTModelSprite_ID5329</key>
+            <dict>
+                <key>frame</key>
+                <string>{{1762, 1870}, {150, 130}}</string>
+                <key>offset</key>
+                <string>{0.0, -2.0}</string>
+                <key>rotated</key>
+                <string>false</string>
+                <key>sourceColorRect</key>
+                <string>{{0, 4}, {150, 130}}</string>
+                <key>sourceSize</key>
+                <string>{150, 134}</string>
+            </dict>
+            <key>PTModelSprite_ID5332</key>
+            <dict>
+                <key>frame</key>
+                <string>{{1608, 1870}, {150, 130}}</string>
+                <key>offset</key>
+                <string>{0.0, -2.0}</string>
+                <key>rotated</key>
+                <string>false</string>
+                <key>sourceColorRect</key>
+                <string>{{0, 4}, {150, 130}}</string>
+                <key>sourceSize</key>
+                <string>{150, 134}</string>
+            </dict>
+            <key>PTModelSprite_ID5338</key>
+            <dict>
+                <key>frame</key>
+                <string>{{1859, 1724}, {150, 130}}</string>
+                <key>offset</key>
+                <string>{0.0, -2.0}</string>
+                <key>rotated</key>
+                <string>false</string>
+                <key>sourceColorRect</key>
+                <string>{{0, 4}, {150, 130}}</string>
+                <key>sourceSize</key>
+                <string>{150, 134}</string>
+            </dict>
+            <key>PTModelSprite_ID5347</key>
+            <dict>
+                <key>frame</key>
+                <string>{{1845, 1197}, {150, 130}}</string>
+                <key>offset</key>
+                <string>{0.0, -2.0}</string>
+                <key>rotated</key>
+                <string>false</string>
+                <key>sourceColorRect</key>
+                <string>{{0, 4}, {150, 130}}</string>
+                <key>sourceSize</key>
+                <string>{150, 134}</string>
+            </dict>
+            <key>PTModelSprite_ID6346</key>
+            <dict>
+                <key>frame</key>
+                <string>{{1700, 1197}, {141, 167}}</string>
+                <key>offset</key>
+                <string>{0.0, -0.0}</string>
+                <key>rotated</key>
+                <string>false</string>
+                <key>sourceColorRect</key>
+                <string>{{0, 0}, {141, 167}}</string>
+                <key>sourceSize</key>
+                <string>{141, 167}</string>
+            </dict>
+            <key>PTModelSprite_ID6360</key>
+            <dict>
+                <key>frame</key>
+                <string>{{1862, 858}, {141, 167}}</string>
+                <key>offset</key>
+                <string>{0.0, -0.0}</string>
+                <key>rotated</key>
+                <string>false</string>
+                <key>sourceColorRect</key>
+                <string>{{0, 0}, {141, 167}}</string>
+                <key>sourceSize</key>
+                <string>{141, 167}</string>
+            </dict>
+            <key>PTModelSprite_ID6692</key>
+            <dict>
+                <key>frame</key>
+                <string>{{1408, 1197}, {288, 208}}</string>
+                <key>offset</key>
+                <string>{0.0, -0.0}</string>
+                <key>rotated</key>
+                <string>false</string>
+                <key>sourceColorRect</key>
+                <string>{{0, 0}, {288, 208}}</string>
+                <key>sourceSize</key>
+                <string>{288, 208}</string>
+            </dict>
+            <key>PTModelSprite_ID6695</key>
+            <dict>
+                <key>frame</key>
+                <string>{{804, 1453}, {800, 578}}</string>
+                <key>offset</key>
+                <string>{0.0, -0.0}</string>
+                <key>rotated</key>
+                <string>false</string>
+                <key>sourceColorRect</key>
+                <string>{{0, 0}, {800, 578}}</string>
+                <key>sourceSize</key>
+                <string>{800, 578}</string>
+            </dict>
+            <key>PTModelSprite_ID6700</key>
+            <dict>
+                <key>frame</key>
+                <string>{{0, 1453}, {800, 578}}</string>
+                <key>offset</key>
+                <string>{0.0, -0.0}</string>
+                <key>rotated</key>
+                <string>false</string>
+                <key>sourceColorRect</key>
+                <string>{{0, 0}, {800, 578}}</string>
+                <key>sourceSize</key>
+                <string>{800, 578}</string>
+            </dict>
+            <key>PTModelSprite_ID6703</key>
+            <dict>
+                <key>frame</key>
+                <string>{{804, 0}, {600, 591}}</string>
+                <key>offset</key>
+                <string>{0.0, -0.0}</string>
+                <key>rotated</key>
+                <string>false</string>
+                <key>sourceColorRect</key>
+                <string>{{0, 0}, {600, 591}}</string>
+                <key>sourceSize</key>
+                <string>{600, 591}</string>
+            </dict>
+            <key>PTModelSprite_ID6706</key>
+            <dict>
+                <key>frame</key>
+                <string>{{0, 0}, {800, 854}}</string>
+                <key>offset</key>
+                <string>{0.0, -0.0}</string>
+                <key>rotated</key>
+                <string>false</string>
+                <key>sourceColorRect</key>
+                <string>{{0, 0}, {800, 854}}</string>
+                <key>sourceSize</key>
+                <string>{800, 854}</string>
+            </dict>
+            <key>PTModelSprite_ID7920</key>
+            <dict>
+                <key>frame</key>
+                <string>{{604, 858}, {800, 578}}</string>
+                <key>offset</key>
+                <string>{0.0, -0.0}</string>
+                <key>rotated</key>
+                <string>false</string>
+                <key>sourceColorRect</key>
+                <string>{{0, 0}, {800, 578}}</string>
+                <key>sourceSize</key>
+                <string>{800, 578}</string>
+            </dict>
+            <key>PTModelSprite_ID7922</key>
+            <dict>
+                <key>frame</key>
+                <string>{{1608, 1453}, {400, 267}}</string>
+                <key>offset</key>
+                <string>{0.0, -0.0}</string>
+                <key>rotated</key>
+                <string>false</string>
+                <key>sourceColorRect</key>
+                <string>{{0, 0}, {400, 267}}</string>
+                <key>sourceSize</key>
+                <string>{400, 267}</string>
+            </dict>
+            <key>PTModelSprite_ID8104</key>
+            <dict>
+                <key>frame</key>
+                <string>{{1612, 595}, {400, 223}}</string>
+                <key>offset</key>
+                <string>{0.0, -22.0}</string>
+                <key>rotated</key>
+                <string>false</string>
+                <key>sourceColorRect</key>
+                <string>{{0, 44}, {400, 223}}</string>
+                <key>sourceSize</key>
+                <string>{400, 267}</string>
+            </dict>
+            <key>PTModelSprite_ID8106</key>
+            <dict>
+                <key>frame</key>
+                <string>{{1208, 595}, {400, 223}}</string>
+                <key>offset</key>
+                <string>{0.0, -0.0}</string>
+                <key>rotated</key>
+                <string>false</string>
+                <key>sourceColorRect</key>
+                <string>{{0, 0}, {400, 223}}</string>
+                <key>sourceSize</key>
+                <string>{400, 223}</string>
+            </dict>
+            <key>PTModelSprite_ID8589</key>
+            <dict>
+                <key>frame</key>
+                <string>{{804, 595}, {400, 245}}</string>
+                <key>offset</key>
+                <string>{0.0, -0.0}</string>
+                <key>rotated</key>
+                <string>false</string>
+                <key>sourceColorRect</key>
+                <string>{{0, 0}, {400, 245}}</string>
+                <key>sourceSize</key>
+                <string>{400, 245}</string>
+            </dict>
+            <key>PTModelSprite_ID9074</key>
+            <dict>
+                <key>frame</key>
+                <string>{{1408, 858}, {450, 335}}</string>
+                <key>offset</key>
+                <string>{0.0, -0.0}</string>
+                <key>rotated</key>
+                <string>false</string>
+                <key>sourceColorRect</key>
+                <string>{{0, 0}, {450, 335}}</string>
+                <key>sourceSize</key>
+                <string>{450, 335}</string>
+            </dict>
+            <key>PTModelSprite_ID9401</key>
+            <dict>
+                <key>frame</key>
+                <string>{{1862, 1029}, {150, 150}}</string>
+                <key>offset</key>
+                <string>{0.0, -0.0}</string>
+                <key>rotated</key>
+                <string>false</string>
+                <key>sourceColorRect</key>
+                <string>{{0, 0}, {150, 150}}</string>
+                <key>sourceSize</key>
+                <string>{150, 150}</string>
+            </dict>
+        </dict>
+        <key>metadata</key>
+        <dict>
+            <key>format</key>
+            <string>2</string>
+            <key>realTextureFileName</key>
+            <string>atlas_ID3850.png</string>
+            <key>size</key>
+            <string>{2048, 2048}</string>
+            <key>smartupdate</key>
+            <string>$Potion:Smartupdate:$</string>
+            <key>textureFileName</key>
+            <string>atlas_ID3850.png</string>
+        </dict>
+    </dict>
+</plist>

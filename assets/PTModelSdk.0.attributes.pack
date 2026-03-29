@@ -1,0 +1,122 @@
+Ì‚
+¥AdboxÍ!
+©adbox-1.1*Í*¹Í
+ !ªPTModelSdkÍ%
+ Ì÷
+§AndroidÌç
+£ads+
+ ÌÌ
+ 6
+€
+€?ƒÌºÂ
+Ã.ÂÌ‚
+¥AdboxÍ!
+©adbox-1.1*Í+õÍ
+ !ªPTModelSdkÍ%
+ Ì÷
+§AndroidÌç
+£ads+
+ ÌÌ
+ 6
+€
+€?ƒÌºÂ
+Ã.ÂÌ‚
+¥AdboxÍ!
+©adbox-1.1*Í-1Í
+ !ªPTModelSdkÍ%
+ Ì÷
+§AndroidÌç
+£ads+
+ ÌÌ
+ 6
+€
+€?ƒÌºÂ
+Ã.ÂÌ‚
+¥AdboxÍ!
+©adbox-1.1*Í.mÍ
+ !ªPTModelSdkÍ%
+ Ì÷
+§AndroidÌç
+£ads+
+ ÌÌ
+ 6
+€
+€?ƒÌºÂ
+Ã.ÂÌ‚
+¥AdboxÍ!
+©adbox-1.1*Í/©Í
+ !ªPTModelSdkÍ%
+ Ì÷
+§AndroidÌç
+£ads+
+ ÌÌ
+ 6
+€
+€?ƒÌºÂ
+Ã.ÂÌ‚
+¥AdboxÍ!
+©adbox-1.1*Í/®Í
+ !ªPTModelSdkÍ%
+ Ì÷
+§AndroidÌç
+£ads+
+ ÌÌ
+ 6
+€
+€?ƒÌºÂ
+Ã.ÂÌ‚
+¦CustomÍ!
+¦custom*Í0èÍ
+ !ªPTModelSdkÍ%
+ Ì÷
+§AndroidÌç
+£ads+
+Ù"Banner,Interstitial,Rewarded VideoÌÌ
+ 6
+€
+³integratorClassPathÙ.com.buildbox.adapter.custom.CustomAdIntegrator?ƒÌºÂ
+Â.ÂÌ‚
+¥AdMobÍ!
+¥admob*Í0éÍ
+Ù/<string name="admob_app_id">{{App ID}}</string>!ªPTModelSdkÍ%
+ Ì÷
+§AndroidÌç
+£ads+
+Ù"Banner,Interstitial,Rewarded VideoÌÌ
+Ù6https://policies.google.com/technologies/partner-sites6
+€
+…¦App IDÙ&ca-app-pub-9544791777233942~5750546786©Banner ID ¯Interstitial IDÙ&ca-app-pub-9544791777233942/6424500050±Rewarded Video IDÙ&ca-app-pub-9544791777233942/5111418380³integratorClassPathÙ'com.buildbox.adapter.admob.AdIntegrator?ƒÌºÂ
+Â.ÂÌ‚
+¥AdboxÍ!
+©adbox-1.1*Í0êÍ
+ !ªPTModelSdkÍ%
+ Ì÷
+§AndroidÌç
+£ads+
+ ÌÌ
+ 6
+€
+€?ƒÌºÂ
+Ã.ÂÌ‚
+¦VungleÍ!
+¬adbox-vungle*Í0ëÍ
+ !ªPTModelSdkÍ%
+ Ì÷
+§AndroidÌç
+£ads+
+Ù"Banner,Interstitial,Rewarded VideoÌÌ
+»https://vungle.com/privacy/6
+€
+…³integratorClassPathÙ(com.buildbox.adapter.vungle.AdIntegratorÙ"Vungle Rewarded Video Placement IDÙtADBOX_GENERATED_PLACEMENT_REWARDED_09456052_21BB_4274_96D7_5BB25673AE3E_COM_DEVBYZENITH_RABBITSKATER_ANDROID-8691805Ù Vungle Interstitial Placement IDÙxADBOX_GENERATED_PLACEMENT_INTERSTITIAL_09456052_21BB_4274_96D7_5BB25673AE3E_COM_DEVBYZENITH_RABBITSKATER_ANDROID-4456933ºVungle Banner Placement IDÙrADBOX_GENERATED_PLACEMENT_BANNER_09456052_21BB_4274_96D7_5BB25673AE3E_COM_DEVBYZENITH_RABBITSKATER_ANDROID-1868797­Vungle App ID¸63c153b0fed72b681bc4cc90?ƒÌºÂ
+Â.ÂÌ‚
+¨AppLovinÍ!
+®adbox-applovin*Í0ìÍ
+ !ªPTModelSdkÍ%
+ Ì÷
+§AndroidÌç
+£ads+
+Ù"Banner,Interstitial,Rewarded VideoÌÌ
+Ù!https://www.applovin.com/privacy/6
+€
+³integratorClassPathÙ*com.buildbox.adapter.applovin.AdIntegrator?ƒÌºÂ
+Â.Â

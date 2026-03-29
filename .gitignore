@@ -1,0 +1,13 @@
+.gradle/
+.kotlin/
+build/
+app/build/
+local.properties
+project/local.properties
+*.iml
+.idea/
+/.project
+/.settings/
+/app/.project
+/app/.classpath
+/app/.settings/
