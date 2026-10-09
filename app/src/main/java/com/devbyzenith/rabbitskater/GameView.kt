@@ -326,8 +326,6 @@ class GameView(context: Context) : SurfaceView(context), SurfaceHolder.Callback 
 
         // TODO: Handle slide input here when added (e.g. swipe down)
 
-        if (gameOver) return
-        
         parallaxBackground?.update(gameSpeed)
         player.update()
         particleSystem.update(gameSpeed)

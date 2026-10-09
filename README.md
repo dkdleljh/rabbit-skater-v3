@@ -40,10 +40,10 @@ adb install app/build/outputs/apk/debug/app-debug.apk
 
 ## 개발 시 먼저 볼 파일
 
-- [app/build.gradle.kts](/home/zenith/Desktop/Rabbit_Skater_v3/app/build.gradle.kts): 앱 모듈 빌드 설정
-- [app/src/main/AndroidManifest.xml](/home/zenith/Desktop/Rabbit_Skater_v3/app/src/main/AndroidManifest.xml): 현재 앱 매니페스트
-- [docs/Android_Guidelines.md](/home/zenith/Desktop/Rabbit_Skater_v3/docs/Android_Guidelines.md): 안드로이드 빌드와 배포 기준
-- [docs/Design_System.md](/home/zenith/Desktop/Rabbit_Skater_v3/docs/Design_System.md): UI 스타일 기준
+- [app/build.gradle.kts](app/build.gradle.kts): 앱 모듈 빌드 설정
+- [app/src/main/AndroidManifest.xml](app/src/main/AndroidManifest.xml): 현재 앱 매니페스트
+- [docs/Android_Guidelines.md](docs/Android_Guidelines.md): 안드로이드 빌드와 배포 기준
+- [docs/Design_System.md](docs/Design_System.md): UI 스타일 기준
 
 ## 광고와 정책 상태
 
@@ -58,3 +58,11 @@ adb install app/build/outputs/apk/debug/app-debug.apk
 - Eclipse/IDE 메타 파일
 
 즉, 빌드 환경과 로컬 경로는 제외하고, 소스와 에셋, 정책 문서만 공유하는 구성을 기본으로 한다.
+
+<!-- BEGIN RELEASE STATUS -->
+## 최신 배포 정보
+
+- 저장소 버전: `v3.0.1`
+- [변경사항과 검증 범위](RELEASE_NOTES.md)
+- [GitHub 릴리즈](https://github.com/dkdleljh/rabbit-skater-v3/releases/latest)
+<!-- END RELEASE STATUS -->
