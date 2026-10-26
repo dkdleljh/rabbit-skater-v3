@@ -15,7 +15,7 @@
         android:roundIcon="@drawable/ic_launcher_foreground"
         android:supportsRtl="true"
         android:theme="@style/Theme.RabbitSkater"
-        tools:targetApi="34">
+        tools:targetApi="36">
 
         <!-- AppLovin SDK Key -->
         <meta-data
