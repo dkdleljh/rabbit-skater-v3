@@ -1,9 +1,6 @@
 name: Android compliance checks
 
 on:
-  push:
-    branches:
-      - fix/play-api36-16kb-compliance-20261026
   pull_request:
 
 permissions:
