@@ -5,14 +5,14 @@ plugins {
 
 android {
     namespace = "com.devbyzenith.rabbitskater"
-    compileSdk = 34
+    compileSdk = 36
 
     defaultConfig {
         applicationId = "com.devbyzenith.rabbitskater"
         minSdk = 24
-        targetSdk = 34
-        versionCode = 4
-        versionName = "3.0.1"
+        targetSdk = 36
+        versionCode = 5
+        versionName = "3.0.2"
 
         testInstrumentationRunner = "androidx.test.runner.AndroidJUnitRunner"
     }
