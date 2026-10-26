@@ -5,9 +5,9 @@
 ## 프로젝트 구성
 
 - 앱 성격: 가로 화면 기반 캐주얼 러닝 게임
-- 빌드 도구: Gradle 8 계열, Kotlin, Android SDK 34
+- 빌드 도구: Gradle 8 계열, Kotlin, Android SDK 36
 - 최소 SDK: Android 7.0 이상 수준인 `minSdk 24`
-- 대상 SDK: `targetSdk 34`
+- 대상 SDK: `targetSdk 36`
 - 앱 이름: `Rabbit Skater v3`
 
 ## 저장소에서 바로 확인할 수 있는 것
