@@ -38,7 +38,8 @@ android {
 
     sourceSets {
         getByName("main") {
-            assets.srcDirs("assets")
+            // 실제 게임 에셋은 앱 모듈 밖의 저장소 루트에 있습니다.
+            assets.srcDirs(rootProject.file("assets"))
         }
     }
 
