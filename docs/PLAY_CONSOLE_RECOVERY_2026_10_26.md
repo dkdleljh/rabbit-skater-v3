@@ -1,5 +1,13 @@
 # Google Play Console readiness – 2026-10-26
 
+## Follow-up evidence — 2026-10-27
+See [the artifact comparison and recovery report](RABBIT_SKATER_RECOVERY_20261027.md).
+The supplied version-code-4 app is a targetSdk-31 Buildbox/Cocos2d-x release,
+not this Kotlin implementation. Its SDKs and signing certificates were inspected.
+The draft now fixes asset packaging and legacy atlas parsing; debug APK, unsigned
+release AAB, unit tests, lint, and 104-asset checks passed in CI. Release signing,
+gameplay parity, device tests, Play declarations and submission remain unverified.
+
 ## Scope
 - App ID: `com.devbyzenith.rabbitskater`
 - This branch upgrades the **current Kotlin game module**. The legacy `project/` Cocos2d-x build configuration is not changed.
