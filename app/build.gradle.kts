@@ -46,6 +46,13 @@ android {
     buildFeatures {
         viewBinding = false
     }
+
+    testOptions {
+        unitTests.all {
+            // 실제 배포 에셋으로 파서 회귀를 검증합니다.
+            it.systemProperty("rabbitSkater.assetsDir", rootProject.file("assets").absolutePath)
+        }
+    }
 }
 
 dependencies {
