@@ -8,6 +8,7 @@
 
     <application
         android:allowBackup="true"
+        android:appCategory="game"
         android:dataExtractionRules="@xml/data_extraction_rules"
         android:fullBackupContent="@xml/backup_rules"
         android:icon="@drawable/ic_launcher_foreground"
@@ -15,7 +16,7 @@
         android:roundIcon="@drawable/ic_launcher_foreground"
         android:supportsRtl="true"
         android:theme="@style/Theme.RabbitSkater"
-        tools:targetApi="34">
+        tools:targetApi="36">
 
         <!-- AppLovin SDK Key -->
         <meta-data

@@ -1,0 +1,53 @@
+name: Android compliance checks
+
+on:
+  pull_request:
+
+concurrency:
+  group: android-compliance-${{ github.event.pull_request.number }}
+  cancel-in-progress: true
+
+permissions:
+  contents: read
+
+jobs:
+  android:
+    name: Build, lint and verify packaged assets (API 36)
+    runs-on: ubuntu-latest
+    timeout-minutes: 30
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-java@v4
+        with:
+          distribution: temurin
+          java-version: '17'
+      - uses: android-actions/setup-android@v4
+      - name: Install Android 16 SDK
+        run: sdkmanager "platforms;android-36" "build-tools;36.0.0"
+      - name: Verify Gradle project
+        run: |
+          chmod +x ./gradlew
+          ./gradlew --no-daemon testDebugUnitTest assembleDebug lintDebug bundleRelease lintRelease
+      - name: Verify game assets in debug APK and unsigned release AAB
+        run: |
+          python3 scripts/verify_game_assets.py \
+            app/build/outputs/apk/debug/app-debug.apk \
+            app/build/outputs/bundle/release/app-release.aab
+      - name: Record DEX size and native inventory (not a compliance verdict)
+        run: |
+          mkdir -p app/build/reports
+          python3 scripts/inspect_play_bundle.py \
+            app/build/outputs/bundle/release/app-release.aab --category game \
+            > app/build/reports/play_bundle_inventory.json
+      - name: Preserve inspection artifacts (not a Play release)
+        uses: actions/upload-artifact@v4
+        with:
+          name: rabbit-skater-inspection-${{ github.sha }}
+          retention-days: 14
+          path: |
+            app/build/outputs/apk/debug/app-debug.apk
+            app/build/outputs/bundle/release/app-release.aab
+            app/build/test-results/testDebugUnitTest/
+            app/build/reports/lint-results-*.html
+            app/build/reports/play_bundle_inventory.json
+

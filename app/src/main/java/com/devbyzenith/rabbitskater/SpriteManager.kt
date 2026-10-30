@@ -55,7 +55,12 @@ class SpriteManager {
             }
         }
 
-        val document = inputStream.use { stream ->
+        // 기존 Buildbox 에셋의 자체 닫힘 DOCTYPE은 표준 XML 파서가 거부합니다.
+        // 원본 파일을 수정하지 않고 알려진 선언만 제거하며 외부 DTD는 로드하지 않습니다.
+        val normalizedXml = inputStream.use { stream ->
+            stream.readBytes().toString(Charsets.UTF_8).replace(LEGACY_PLIST_DOCTYPE, "")
+        }
+        val document = normalizedXml.byteInputStream().use { stream ->
             documentFactory.newDocumentBuilder().parse(stream)
         }
 
@@ -320,6 +325,8 @@ class SpriteManager {
     }
 
     companion object {
+        private const val LEGACY_PLIST_DOCTYPE =
+            "<!DOCTYPE plist PUBLIC \"-//Apple//DTD PLIST 1.0//EN\" \"http://www.apple.com/DTDs/PropertyList-1.0.dtd\"/>"
         private const val DICT_TAG = "dict"
         private const val KEY_TAG = "key"
         private const val STRING_TAG = "string"

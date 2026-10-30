@@ -20,11 +20,17 @@ class PlayerTest {
     }
     
     @Test
-    fun `jump should not set velocityY when already jumping`() {
+    fun `second jump should use double jump force and third jump should be ignored`() {
         player.jump()
-        val initialVelocity = player.velocityY
+        assertFalse(player.hasDoubleJumped)
+
         player.jump()
-        assertEquals(initialVelocity, player.velocityY, 0.01f)
+        val doubleJumpVelocity = com.devbyzenith.rabbitskater.GameConfig.Player.DOUBLE_JUMP_FORCE
+        assertEquals(doubleJumpVelocity, player.velocityY, 0.01f)
+        assertTrue(player.hasDoubleJumped)
+
+        player.jump()
+        assertEquals(doubleJumpVelocity, player.velocityY, 0.01f)
     }
     
     @Test

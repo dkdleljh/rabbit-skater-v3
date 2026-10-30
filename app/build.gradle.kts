@@ -5,14 +5,14 @@ plugins {
 
 android {
     namespace = "com.devbyzenith.rabbitskater"
-    compileSdk = 34
+    compileSdk = 36
 
     defaultConfig {
         applicationId = "com.devbyzenith.rabbitskater"
         minSdk = 24
-        targetSdk = 34
-        versionCode = 4
-        versionName = "3.0.1"
+        targetSdk = 36
+        versionCode = 5
+        versionName = "3.0.2"
 
         testInstrumentationRunner = "androidx.test.runner.AndroidJUnitRunner"
     }
@@ -38,12 +38,20 @@ android {
 
     sourceSets {
         getByName("main") {
-            assets.srcDirs("assets")
+            // 실제 게임 에셋은 앱 모듈 밖의 저장소 루트에 있습니다.
+            assets.srcDirs(rootProject.file("assets"))
         }
     }
 
     buildFeatures {
         viewBinding = false
+    }
+
+    testOptions {
+        unitTests.all {
+            // 실제 배포 에셋으로 파서 회귀를 검증합니다.
+            it.systemProperty("rabbitSkater.assetsDir", rootProject.file("assets").absolutePath)
+        }
     }
 }
 
