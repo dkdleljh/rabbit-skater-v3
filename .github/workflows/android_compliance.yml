@@ -33,6 +33,12 @@ jobs:
           python3 scripts/verify_game_assets.py \
             app/build/outputs/apk/debug/app-debug.apk \
             app/build/outputs/bundle/release/app-release.aab
+      - name: Record DEX size and native inventory (not a compliance verdict)
+        run: |
+          mkdir -p app/build/reports
+          python3 scripts/inspect_play_bundle.py \
+            app/build/outputs/bundle/release/app-release.aab --category game \
+            > app/build/reports/play_bundle_inventory.json
       - name: Preserve inspection artifacts (not a Play release)
         uses: actions/upload-artifact@v4
         with:
@@ -43,3 +49,5 @@ jobs:
             app/build/outputs/bundle/release/app-release.aab
             app/build/test-results/testDebugUnitTest/
             app/build/reports/lint-results-*.html
+            app/build/reports/play_bundle_inventory.json
+
